@@ -10,3 +10,6 @@ This service and timer will generate a weather report as a text file using the w
 4. Edit the weather.service file. You will need to change the filepath of `ExecStart` to the path of the weather_script. Example: `ExecStart=/home/vagrant/weather/weather_script`
 5. You will also need to change the filepath of `WorkingDirectory`to the directory containing the weather_script. 
 
+# Dependencies
+cURL is required to use wttr.in. Install with:
+```sudo apt install curl```
